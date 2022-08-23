@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New User Registration</title>
+    <link rel="stylesheet" href="html/css/normalize.css">
+    <link rel="stylesheet" href="html/css/main.css">
+
+</head>
+<body>
+<H1>New User Registration</H1>
+<FORM>
+    <ul>
+        <li>
+            <label for="firstname">firstname:</label>
+            <input type="text" id="firstname" autofocus name="firstname" placeholder="Your first name" required>
+        </li>
+        <li>
+            <label for="lastname">lastname:</label>
+            <input type="text" id="lastname" name="lastname"  placeholder="Your last name" required>
+        </li>
+        <li>
+            <label for="email">email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email address" required>
+        </li>
+        <!--        <li>-->
+        <!--            <label for="password">password:</label>-->
+        <!--            <input type="password" id="password" name="password" minlength="8" required><br><br>-->
+
+        <!--        </li>-->
+        <li>  <label for="password">Password</label>
+            <input type="password" id="password" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]$"
+                   title="Must contain at least one number and one uppercase and lowercase letter,
+                   and at least 8 or more characters"  minlength="8" required></li>
+        <li>
+            <label for="confirmpassword">confirmpassword:</label>
+            <input type="password" id="confirmpassword" name="confirmpassword" minlength="8" placeholder="Enter your password again to confirm it" required><br><br>
+        </li>
+        <li><button type="submit">Register</button></li>
+        <li><a href="./ts_and_cs.html">Terms and Conditions</a></li>
+    </ul>
+
+</FORM>
+
+</body>
+</html>
